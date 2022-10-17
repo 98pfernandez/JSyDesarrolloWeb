@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'mainFont';
+    src: url(../fonts/Cuprum-VariableFont_wght.ttf)
+}
+
+
+/* 
+
+CARDS 
+
+*/
+.projects {
+    background-color: #282828;
+    margin: 10px;
+
+    border-radius: 10px;
+    border: 35px solid;
+    border-color: black;
+    border-width: 1px;
+    color: white;
+
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    box-shadow: 10px 8px 5px 6px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 10px 8px 5px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 10px 8px 5px 6px rgba(0, 0, 0, 0.2);
+
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-header{
+    border-bottom: 1px solid rgb(255 255 255 / 13%);
+}
+
+
+
+.projects:hover {
+    transition: 2s;
+    transform: scale(1.05);
+}
+
+.projects:not(:hover) {
+    transition: 1s;
+    transform: scale(1);
+}
+
+.projectTitle {
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card-header {
+    width: 100%;
+    height: 15%;
+}
+
+img {
+    height: 190px;
+    width: 300px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+.projects div{
+    background-color: #282828; 
+}
+
+p{
+    background-color: #282828;
+    color: white;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1000px) {
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .etiquetaMenu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .etiquetaMenu {
+        cursor: pointer;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    #check:checked~ul {
+        display: flex;
+        flex-direction: column;
+
+        transition: 2sec;
+        height: 100%;
+    }
+
+}
+

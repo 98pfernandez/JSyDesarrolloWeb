@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'mainFont';
+    src: url(../fonts/Cuprum-VariableFont_wght.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header"
+        "content contact"
+        "footer footer";
+
+}
+
+form{
+ margin-left: 10%;
+ margin-top: 10%;
+ margin-bottom: 10%;
+}
+
+input{
+    width: 100%;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.051);
+    border-color: rgba(255, 255, 255, 0.644);
+    color: white;
+}
+
+.formButton:hover{
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(255, 255, 255, 0.404);
+    color: black;
+}
+
+textarea{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.051);
+    border-color: rgba(255, 255, 255, 0.644);
+    color: white;
+}
+
+header {
+    grid-area: header;
+    font-size: 15px;
+    color: white;
+
+    padding: 30px;
+    display: flex;
+    background: linear-gradient(to right, #161616, #2b2b2b);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    grid-area: content;
+}
+
+aside {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+aside p {
+    margin: 10px;
+    color: white;
+    background-color: transparent;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    background: linear-gradient(to right, #161616, #2b2b2b);
+    margin-top: 20px color white;
+    height: 250px;
+    font-size: 30px;
+}
+
+
+fieldset {
+    border-radius: 15px;
+}
+
+p {
+    background-color: white;
+    opacity: 0.8;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+.itemList {
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.itemList:hover {
+    border-radius: 10px;
+    background-color: rgb(48, 152, 243);
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+.textContentStyle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    background-color: rgba(248, 248, 248, 0);
+}
+
+.imageStyle {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+h3 {
+    padding: 50px;
+    color: white;
+}
+
+.stylePresentation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 90px;
+}
+
+
+.styleTexto {
+    height: 500px;
+    width: 500px;
+    border: white solid;
+    border-radius: 10px;
+    border-width: 1.5px;
+    margin: 10px;
+    text-align: center;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.05) 25px 25px;
+}
+
+.myBodyIndex {
+    background-color: rgb(40, 40, 40);
+}
+
+.styleTabla {
+
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+
+}
+
+table {
+    height: 300px;
+    width: 50%;
+}
+
+.fa-brands fa-facebook {
+    color: white;
+    height: 50px;
+    width: 50px;
+}
+
+#facebook:hover {
+    transition: 2sec;
+    font-size: 100px;
+    color: rgb(42, 115, 186)
+}
+
+#whatsapp:hover {
+    transition: 2sec;
+    font-size: 100px;
+    color: rgb(42, 183, 64)
+}
+
+#twitter:hover {
+    transition: 2sec;
+    font-size: 100px;
+    color: rgb(29, 161, 242)
+}
+
+.socialMedia {
+    display: flex;
+    margin: 50px;
+}
+
+
+iframe {
+    height: 1000px;
+}
+
+h2,
+label,
+legend {
+    color: white;
+}
+
+form,
+fieldset {
+
+    margin-top: 50px;
+}
+
+
+
+.etiquetaMenu {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    body {
+        display: grid;
+        grid-template-areas: "header"
+            "content"
+            "contact"
+            "footer";
+
+    }
+    legend, label{
+        text-align: center;
+    }
+
+    .formulario{
+        width: 50%;
+    }
+
+    form{
+        margin: 10%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    header {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    aside {
+        grid-area: contact;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .etiquetaMenu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .etiquetaMenu {
+        cursor: pointer;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    /*MENU RESPONSIVO HECHO A MANO*/
+    #check:checked~ul {
+        display: flex;
+        flex-direction: column;
+
+        transition: 2sec;
+        height: 100%;
+    }
+
+}

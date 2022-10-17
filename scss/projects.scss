@@ -1,0 +1,113 @@
+//USO DE MAPEO EN LOS COLORES DE LAS CARDS
+$mapColores: (
+    "colorFondo": #282828,
+    "colorLetra": white,
+    "colorBorde": black
+);
+
+//USO DE VARIABLE PARA VALOR QUE SE REPITE 
+$tamanoColorShadow: 10px 8px 5px 6px rgba(0, 0, 0, 0.2);
+
+//USO DE MIXIN CON PARAMETROS
+@mixin tamanosCards ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+;
+
+//FLEXBOX POR FUNCIÓN MIXIN SIN PARAMETROS
+@mixin flexBoxFuncion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+;
+
+//FUENTE
+@font-face {
+    font-family: 'mainFont';
+    src: url(../fonts/Cuprum-VariableFont_wght.ttf)
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .projects {
+        background-color: map-get($mapColores, colorFondo);
+        margin: 10px;
+
+        border-radius: 10px;
+        border: 35px solid;
+        border-color: map-get($mapColores, colorBorde);
+        border-width: 1px;
+        color: map-get($mapColores, colorLetra);
+
+        @include tamanosCards(400px, 400px);
+        overflow: hidden;
+
+        @include flexBoxFuncion();
+        align-items: center;
+
+        box-shadow: $tamanoColorShadow;
+        -webkit-box-shadow: $tamanoColorShadow;
+        -moz-box-shadow: $tamanoColorShadow;
+
+        border: 1px solid rgba(255, 255, 255, 0.125);
+
+
+        &:hover {
+            transition: 2s;
+            transform: scale(1.05);
+        }
+
+        &:not(:hover) {
+            transition: 1s;
+            transform: scale(1);
+        }
+
+        p {
+            background-color: map-get($mapColores, colorFondo);
+            color: map-get($mapColores, colorLetra);
+        }
+
+        div {
+            background-color: map-get($mapColores, colorFondo);
+        }
+
+        .card-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+            width: 100%;
+            height: 15%;
+        }
+    }
+}
+
+img {
+    height: 190px;
+    width: 300px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1000px) {
+
+    header {
+        @include flexBoxFuncion();
+    }
+
+    .etiquetaMenu {
+        @include flexBoxFuncion();
+    }
+
+    .etiquetaMenu {
+        cursor: pointer;
+    }
+
+    header ul {
+        display: none;
+    }
+}
