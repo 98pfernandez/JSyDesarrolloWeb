@@ -26,7 +26,7 @@
 
 <body>
   <header>
-    <h1 id="titulo">DESARROLLO DE SOLUCIONES INFORMÁTICAS</h1>
+    <h1 id="titulo"><a href="../index.html">DESARROLLO DE SOLUCIONES INFORMÁTICAS</a></h1>
     <nav>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light navegationBar">
@@ -40,7 +40,7 @@
               <li class="itemList">HOME</li>
             </a>
             <a href="./projects.html">
-              <li class="itemList">PORTAFOLIO</li>
+              <li class="itemList">CATÁLOGO</li>
             </a>
             <a href="./location.html">
               <li class="itemList">UBICACIÓN</li>
@@ -48,9 +48,13 @@
             <a href="./form.html">
               <li class="itemList">FORMULARIO DE CONTACTO</li>
             </a>
-            <a href="./aboutUs.html">
-              <li class="itemList">OPINIONES</li>
-            </a>
+            <li>
+              <div class="carrito">
+                <span id="contadorCarrito"></span>
+                <a id="bttCarrito" href="./cart.html"><img style="height:50px; width:50px"
+                    src="../assets/img/cart.png" alt="carrito"></a>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -58,122 +62,72 @@
 
   <main>
 
+<div class="tarjetas">
+
     <div data-aos="flip-right" data-aos-duration="300">
       <div class="card projects">
         <div class="card-header">
-          Proyecto N°1:
+          Software de Finanzas:
         </div>
         <div class="card-body">
           <img src="../assets/img/project1.png" alt="proyect1" data-aos-duration="500">
-          <p class="card-text">Se desarrollo un software para controlar las finanzas de una empresa. Permitiendo
+          <p class="card-text">Software para controlar las finanzas de una empresa. Permitiendo
             entender cómo se distribuyen y utilizan los recursos la misma, para así optimizar el rendimiento de
             estos capitales</p>
         </div>
+        <button id="bttProyecto1" type="button" class="btn btn-dark buttonCards">Agregar</button>
       </div>
     </div>
 
     <div data-aos="flip-right" data-aos-duration="700">
       <div class="card projects">
         <div class="card-header">
-          Proyecto N°2:
+          ECommerce:
         </div>
         <div class="card-body">
           <img src="../assets/img/project2.png" alt="proyect1">
-          <p class="card-text">Aplicación de ECommerce para un local de productos electrónicos. Esta aplicación cuenta
+          <p class="card-text">ECommerce para locales de productos electrónicos. Esta aplicación cuenta
             con catalogo,
             carrito, pagos integrados para tarjetas internacionales y la opción de realizar envios. </p>
         </div>
+        <button id="bttProyecto2" type="button" class="btn btn-dark buttonCards">Agregar</button>
       </div>
     </div>
 
     <div data-aos="flip-right" data-aos-duration="900">
       <div class="card projects">
         <div class="card-header">
-          Proyecto N°3:
+          Portal de noticias a medida:
         </div>
         <div class="card-body">
           <img src="../assets/img/project3.png" alt="proyect3">
-          <p class="card-text">Página Web a medida para un portal de noticias internacional. Este sitio cuenta con la
+          <p class="card-text">Página Web a medida para portales de noticias. Este esquema cuenta con la
             posibilidad de
             suscripciones a la página, para leer las noticias por un monto determinado. </p>
         </div>
+        <button id="bttProyecto3" type="button" class="btn btn-dark buttonCards">Agregar</button>
       </div>
     </div>
 
     <div data-aos="flip-right" data-aos-duration="1100">
       <div class="card projects">
         <div class="card-header">
-          Proyecto N°4:
+          Software para cajas registradoras:
         </div>
         <div class="card-body">
           <img src="../assets/img/project4.png" alt="proyect4">
-          <p class="card-text">Se implemento un software para la tesorería de una importante empresa. Este
-            software monitorea los gastos y genera gráficos/estadísticas según los datos obtenidos. También sugiere
-            mejoras para optimizar los recursos.</p>
+          <p class="card-text">Usted puede administrar su tienda, sus acciones, sus finanzas e incluso las divisas. Extremadamente útiles para los propietarios de negocios.</p>
         </div>
+        <button id="bttProyecto4" type="button" class="btn btn-dark buttonCards">Agregar</button>
       </div>
     </div>
+  </div>
+      <div id="msjProductoComprado"></div>
 
-    <div data-aos="flip-right" data-aos-duration="1300">
-      <div class="card projects">
-        <div class="card-header">
-          Proyecto N°5:
-        </div>
-        <div class="card-body">
-          <img src="../assets/img/project5.png" alt="proyect5">
-          <p class="card-text">Se implemento un sitio web a medida para un arquitecto reconocido a nivel internacional.
-            Se
-            dio especial énfasis en crear una galería en la cual se pudieran visualizar las obras en las cual estuvo
-            implicado el arquitecto.</p>
-        </div>
-      </div>
-    </div>
-
-    <div data-aos="flip-right" data-aos-duration="1500">
-      <div class="card projects">
-        <div class="card-header">
-          Proyecto N°6:
-        </div>
-        <div class="card-body">
-          <img src="../assets/img/project6.png" alt="proyect6">
-          <p class="card-text">Se diseño un software capaz de controlar varios dispositivos simultáneamente desde la PC.
-            Este programa brinda la posibilidad de interconectar todos los dispositivos vinculados a la misma red.</p>
-        </div>
-      </div>
-    </div>
-
-    <div data-aos="flip-right" data-aos-duration="1700">
-      <div class="card projects">
-        <div class="card-header">
-          Proyecto N°7:
-        </div>
-        <div class="card-body">
-          <img src="../assets/img/project7.png" alt="proyect7">
-          <p class="card-text">Web para plataforma educativa orientada a dictar cursos relacionados con la
-            programación. La plataforma cuenta con una sección teórica (en vivo o pre grabadas) y otra sección practica
-            para a poner a prueba los conocimientos. </p>
-        </div>
-      </div>
-    </div>
-
-    <div data-aos="flip-right" data-aos-duration="1800">
-      <div class="card projects">
-        <div class="card-header">
-          Proyecto N°8:
-        </div>
-        <div class="card-body">
-          <img src="../assets/img/project8.png" alt="proyect8">
-          <p class="card-text">Plataforma educativa dedicada a impartir una amplia variedad de cursos en diferentes
-            idiomas. Cuenta con sistema de suscripción y pagos internacionales para formarse desde cualquier parte del
-            mundo.</p>
-        </div>
-      </div>
-    </div>
-
-
-
-
+      
   </main>
+
+
 
   <footer>
     <ul>
@@ -186,6 +140,7 @@
 
     </ul>
   </footer>
+  <script src="../scripts/app.js"></script>
   <!--AOS-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

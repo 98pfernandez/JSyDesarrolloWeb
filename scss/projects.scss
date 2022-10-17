@@ -31,11 +31,12 @@ $tamanoColorShadow: 10px 8px 5px 6px rgba(0, 0, 0, 0.2);
     src: url(../fonts/Cuprum-VariableFont_wght.ttf)
 }
 
-main {
+.tarjetas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
     .projects {
         background-color: map-get($mapColores, colorFondo);
@@ -84,7 +85,35 @@ main {
             width: 100%;
             height: 15%;
         }
+
+        .buttonCards{
+            margin-top: 50%;
+            margin-bottom: 2px;
+            background-color: #282828;
+            
+        }
     }
+}
+
+
+footer{
+    margin-top: auto;
+}
+
+.carrito {
+    position: relative;
+}
+
+#contadorCarrito {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(248, 96, 79);
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 95%;
 }
 
 img {
@@ -110,4 +139,18 @@ img {
     header ul {
         display: none;
     }
+}
+
+#cursoComprado{
+   display: block !important;
+
+}
+
+a:link, a:visited, a:active {
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
 }

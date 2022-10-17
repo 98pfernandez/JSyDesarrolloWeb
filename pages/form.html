@@ -24,7 +24,7 @@
 <body>
 
     <header>
-        <h1 id="titulo">DESARROLLO DE SOLUCIONES INFORMÁTICAS</h1>
+        <h1 id="titulo"><a href="../index.html">DESARROLLO DE SOLUCIONES INFORMÁTICAS</a></h1>
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="etiquetaMenu">
@@ -35,7 +35,7 @@
                     <li class="itemList">HOME</li>
                 </a>
                 <a href="./projects.html">
-                    <li class="itemList">PORTAFOLIO</li>
+                    <li class="itemList">CATÁLOGO</li>
                 </a>
                 <a href="./location.html">
                     <li class="itemList">UBICACIÓN</li>
@@ -43,9 +43,13 @@
                 <a href="./form.html">
                     <li class="itemList">FORMULARIO DE CONTACTO</li>
                 </a>
-                <a href="./aboutUs.html">
-                    <li class="itemList">OPINIONES</li>
-                </a>
+                <li>
+                    <div class="carrito">
+                      <span id="contadorCarrito"></span>
+                      <a id="bttCarrito" href="./cart.html"><img style="height:50px; width:50px"
+                          src="../assets/img/cart.png" alt="carrito"></a>
+                    </div>
+                  </li>
             </ul>
         </nav>
     </header>
@@ -95,6 +99,8 @@
 
         </ul>
     </footer>
+
+    <script src="../scripts/contadorCarrito.js"></script>
 </body>
 
 </html>
